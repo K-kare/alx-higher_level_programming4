@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import request
 # takes in a URL, sends a request to that URL
 # displays the size of the body of the response
 if [ $# -eq 0 ]; then
