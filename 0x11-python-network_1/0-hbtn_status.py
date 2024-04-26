@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-#use urllib for fetching url
-#Python script that fetches an url
-#uses with statement
+#Python script that fetches
 import urllib.request
+"""
+Python module for fetching url
+body : variable stores the response
+"""
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
      body = response.read().decode('utf-8')
+if __name__ == "__main__":
 print("Body response:")
 print("\t\t- type:", type(body))
 print("\t\t- content:", body)
