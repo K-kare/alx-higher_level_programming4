@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+#use urllib for fetching url
 #Python script that fetches an url
+#uses with statement
 import urllib.request
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
      body = response.read().decode('utf-8')
