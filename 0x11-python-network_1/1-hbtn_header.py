@@ -6,4 +6,6 @@ import sys
 if len(sys.argv) < 2:
     sys.exit(1)
 with urllib.request.urlopen(sys.argv[1]) as response:
+    body = response.header.get('X-Request-Id')
 
+print("X-Request-Id:", body)
