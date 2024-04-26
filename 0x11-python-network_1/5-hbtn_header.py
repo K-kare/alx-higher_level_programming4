@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Python script that takes in a URL
+# displays the value of the variable 
 import requests
 import sys
 res = requests.get(sys.argv[1])
